@@ -1,2 +1,0 @@
-webpackJsonp([0xbde7f0d77ea1],{501:function(e,t){e.exports={data:{wordpressPage:{id:"b7a91756-c4ef-580b-b4ac-6430c03d8ae9",content:"",title:"Smugmug",date:"March 15, 2018",yoast:{title:"",description:"",keywords:""}},site:{id:"Site",siteMetadata:{title:"A sample site using gatsby-source-wordpress",subtitle:"Data fetched from a site hosted on wordpress.com"}}},pathContext:{id:"b7a91756-c4ef-580b-b4ac-6430c03d8ae9"}}}});
-//# sourceMappingURL=path---smugmug-32a0aac8a9676d849f23.js.map
