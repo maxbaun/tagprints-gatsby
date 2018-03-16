@@ -2,5 +2,6 @@ node_modules
 .cache
 .DS_Store
 *.log
+public
 
 wordpress/wp-content/uploads
