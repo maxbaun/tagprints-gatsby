@@ -1,0 +1,121 @@
+.carousel.js-flickity{
+  padding-left: 150px;
+  padding-right: 150px;
+  .carousel-cell{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0px 20px;
+    img{
+      margin: auto;
+    }
+  }
+
+  &.no-dots{
+    .flickity-page-dots{
+      display: none;
+    }
+  }
+}
+
+.carousel.multiple{
+  .carousel-cell {
+    width: 33%;
+    height: 300px;
+    text-align: center;
+    /* flex-box, center image in cell */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+
+  .carousel-cell img,
+  .carousel-cell .svg-icon {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    /* dim unselected */
+    @include opacity(.3);
+    @include transform(scale(0.75));
+    @include transition(opacity $trans_time, -webkit-transform $trans_time, transform $trans_time, transform $trans_time);
+    margin: auto;
+  }
+
+  /* brighten selected image */
+  .carousel-cell.is-selected img,
+  .carousel-cell.is-selected .svg-icon {
+    @include opacity(1);
+    @include transform(scale(1));
+  }
+
+  .carousel-cell svg{
+      height: 100%;
+      width: 100%;
+  }
+}
+
+
+/* buttons, no circle */
+.flickity-prev-next-button,
+.flickity-prev-next-button:active,
+.flickity-prev-next-button:focus {
+  width: 57px;
+  height: 57px;
+  background: $color_14;
+  outline: none;
+  box-shadow: none;
+  @include border-radius(6px);
+  @include opacity(1);
+  @include transition(background $trans_time);
+}
+.flickity-prev-next-button:hover {
+  background: $color_5;
+}
+
+.flickity-prev-next-button:disabled{
+  @include opacity(.3);
+  background: $color_14 !important;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: $color_white;
+}
+.flickity-prev-next-button.no-svg {
+  color: $color_white;
+}
+/* closer to edge */
+.flickity-prev-next-button.previous { left: 0; }
+.flickity-prev-next-button.next { right: 0; }
+
+.flickity-prev-next-button svg {
+    left: 40%;
+    top: 40%;
+    width: 20%;
+    height: 20%;
+}
+
+
+@media screen and ( max-width: $screen-sm-min ) {
+  .carousel.multiple{
+    .carousel-cell {
+      width: 100%;
+      height: auto;
+      min-height: 300px;
+    }
+  }
+
+  .carousel.js-flickity{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .flickity-prev-next-button{
+    display: none;
+  }
+
+}

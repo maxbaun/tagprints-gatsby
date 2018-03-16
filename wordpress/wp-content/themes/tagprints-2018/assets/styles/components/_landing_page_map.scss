@@ -1,0 +1,131 @@
+.landing-page-map{
+  position: relative;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+}
+
+.landing-page-map-text{
+  line-height: 1.2;
+  font-size: 16px;
+  margin-bottom: 0px;
+  height: 60px;
+}
+
+.landing-page-map-image{
+  text-align: center;
+}
+
+.landing-page-map-icon{
+  min-width: 53px;
+  height: auto;
+}
+
+.landing-page-map-separator{
+  background-color: $color_15;
+  height: 1px;
+  margin: 5px 0px 10px;
+  position: relative;
+}
+
+.landing-page-map-separator:after{
+  height: 11px;
+  width: 100px;
+  background-image: url($assetPath + '/images/pointers.png');
+  background-size: 100px 11px;
+  background-repeat: no-repeat;
+  content: ' ';
+  top: -5px;
+  position: absolute;
+}
+
+
+[class*="landing-page-map-content-"]{
+  position: absolute;
+  max-width: 230px;
+  font-size: 16px;
+}
+
+.landing-page-map-content-1,
+.landing-page-map-content-2{
+  top: 0px;
+}
+
+.landing-page-map-content-3,
+.landing-page-map-content-4{
+  bottom: 0px;
+}
+
+.landing-page-map-content-1,
+.landing-page-map-content-3{
+  .landing-page-map-separator,
+  .landing-page-map-icon{
+    margin-left: auto;
+    margin-right: 0px;
+  }
+
+  .landing-page-map-separator:after{
+    left: calc(100% + 20px);
+  }
+  left: 50%;
+  text-align: right;
+}
+
+.landing-page-map-content-2,
+.landing-page-map-content-4{
+  text-align: left;
+  right: 50%;
+
+  .landing-page-map-separator:after{
+    left: -120px;
+    @include transform(scale(-1,1));
+  }
+}
+
+.landing-page-map-content-1{
+  left: 0px;
+}
+
+.landing-page-map-content-2{
+  right: 0px;
+}
+
+.landing-page-map-content-3{
+  left: 30px;
+}
+
+.landing-page-map-content-4{
+  right: 30px;
+}
+
+
+@media (max-width:$screen-md-min){
+  .landing-page-map{
+    margin-bottom: 30px;
+  }
+  [class*="landing-page-map-content-"]{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .landing-page-map-separator,
+  .landing-page-map-icon{
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .landing-page-map-separator:after{
+    display: none;
+  }
+
+  .landing-page-map-text{
+    height: auto;
+  }
+
+}

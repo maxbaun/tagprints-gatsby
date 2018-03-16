@@ -1,0 +1,121 @@
+.Our_Mission {
+  
+  font-family: "Roboto";
+  color: rgb(51, 51, 51);
+  line-height: 0.75;
+  position: absolute;
+  left: 1172.984px;
+  top: 207.703px;
+  z-index: 81;
+}
+
+
+
+.quote-block{
+  .quote-content{
+    display:table;
+    margin-bottom: 15px;
+
+    .title{
+      font-weight:100;
+      text-align:left;
+    }
+
+    .thumbnail,.text{
+      @include vertical-align-table();
+    }
+
+    .thumbnail{
+      background: transparent;
+      border: none;
+      border-radius: 0px;
+      padding: 0px;
+      width: 33.3%;
+    }
+    .text{
+      
+      margin-right: auto;
+
+      .text-block{
+        margin-bottom:0px;
+      }
+    }
+  }
+  .quote-info{
+    display: table;
+    
+    margin-left: 33.3%;
+
+    .company,.person{
+      @include vertical-align-table();
+    }
+
+    .company{
+      padding-right: 20px;
+      text-align: right;
+    }
+
+    .person:before{
+      position: absolute;
+      left: 0;
+      height: 30px;
+      background-color: $color_1;
+      width: 1px;
+      content: ' '; 
+      @include vertical-align(0);
+    }
+
+    .person{
+      position: relative;
+      padding-left: 20px;
+      .name{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+        margin-bottom: 8px;
+        color: $color_2;
+        text-transform: uppercase;
+      }
+      .position{
+        font-size: 12px;
+        line-height: 12px;
+        font-weight: 400;
+        color: $color_5;
+      }
+    }
+  }
+
+}
+
+.quote-block.large{
+  .text,.quote-info{
+    padding-left:80px;
+  }
+}
+.quote-block.top{
+  .text,.thumbnail{
+    vertical-align:top;
+  }  
+}
+
+@media (max-width: $screen-sm-min){
+  .quote-block{
+    .quote-content{
+      display: block;
+
+      .thumbnail,.text{
+        display:block;
+        width: 100%;
+      }
+      .text{
+        padding-left:0px;
+      }
+    }
+    .quote-info{
+      margin-left: 0px;
+      width: 100%;
+      padding-left:0px;
+    }
+  }
+}
+

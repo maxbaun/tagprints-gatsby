@@ -1,0 +1,39 @@
+.service-header{
+  .thumbnail{
+    text-align:center;
+    @include noThumbnail();
+    img{
+      display: block;
+      margin-right:auto;
+      margin-left: auto;
+      max-height:656px;
+    }
+  }
+  .left,.right{
+    float: left;
+    width: 50%;
+    // margin-bottom:30px;
+  }  
+  .vertical-align{
+    display: table;
+    width:100%;
+    .left,.right{
+      float: none;
+      display: table-cell;
+      vertical-align: middle;      
+    }
+  }
+}
+
+@media (max-width: $break_point){
+  
+  .service-header{
+    .image{
+      // display: none !important;
+    }
+    .left,.right{
+      display:block !important;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.map{
+  position: relative;
+  overflow: hidden;
+  img{
+    // display: block;
+    // margin-left:auto;
+    // margin-right:auto;
+  }
+  .marker{
+    position: absolute;
+    color: $color_white;
+
+    font-size: 24px;
+    
+    @include transition(all $trans_time);
+    display: block;
+  }
+  .marker:hover{
+    color: $color_10;
+  }
+  .marker-label{
+    font-size: 12px;
+    line-height: 16px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $color_2;
+    color: $color_white;
+    padding: 5px 10px ;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin-top: -22px;
+    margin-left: 20px;
+    display: block;
+    opacity: 0;
+    font-weight: 500;
+    white-space: nowrap;
+    position: absolute;
+    width: auto;
+    @include transition(all $trans_time);
+
+  }
+  .marker-label.marker-label-visible{
+    opacity: 1;
+  }  
+}
+

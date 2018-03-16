@@ -1,0 +1,44 @@
+.modal-free-quote{
+
+}
+
+.modal-title{
+  .title{
+    margin-bottom: 0px;
+  }
+}
+
+.modal-content.brick{
+  @extend .bg-brick;
+
+  .btn-cta-transparent-inverse{
+  	border-color: $color_5;
+  	color: $color_5;
+  	background-color: transparent;
+  }
+
+  .btn-cta-transparent-inverse:hover,
+  .btn-cta-transparent-inverse:active,
+  .btn-cta-transparent-inverse:focus{
+  	color: $color_4;
+  	border-color: $color_4;
+    background-color: transparent;
+  }
+}
+
+@media (max-width: $screen-sm-min){
+
+	.modal-open {
+		overflow-y: auto;
+
+		.modal {
+			overflow: hidden;
+			bottom: auto;
+			position: absolute;
+		}
+	}
+
+
+
+
+}

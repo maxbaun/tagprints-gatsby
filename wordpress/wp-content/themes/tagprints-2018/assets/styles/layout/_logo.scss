@@ -1,0 +1,68 @@
+.tagprints-logo-svg {
+	.st0{
+		fill-rule:evenodd;
+		clip-rule:evenodd;
+	}
+	.st1{
+		fill-rule:evenodd;
+		clip-rule:evenodd;
+	}
+	.st2{
+		fill-rule:evenodd;
+		clip-rule:evenodd;
+	}
+
+	&[data-theme="default"] {
+		.st0{
+			fill: $color_35;
+		}
+		.st1{
+			fill: $color_35;
+		}
+		.st2{
+			fill: $color_33;
+		}
+		.st3{
+			fill: $color_35;
+		}
+		.st4{
+			fill: $color_33;
+		}
+	}
+
+	&[data-theme="array13"] {
+		.st0{
+			fill: $color_31;
+		}
+		.st1{
+			fill: $color_32;
+		}
+		.st2{
+			fill: $color_white;
+		}
+		.st3{
+			fill: $color_34;
+		}
+		.st4{
+			fill: $color_white;
+		}
+	}
+
+	&[data-theme="grey"] {
+		.st0{
+			fill: $color_2;
+		}
+		.st1{
+			fill: $color_2;
+		}
+		.st2{
+			fill: $color_2;
+		}
+		.st3{
+			fill: $color_2;
+		}
+		.st4{
+			fill: $color_2;
+		}
+	}
+}

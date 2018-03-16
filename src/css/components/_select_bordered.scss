@@ -1,0 +1,67 @@
+div.cs-skin-border {
+	background: transparent;
+}
+
+.cs-skin-border > span {
+	border: 1px solid rgba($color_white,.6);
+	-webkit-transition: background $trans_time, border-color $trans_time;
+	transition: background $trans_time, border-color $trans_time;
+  @include border-radius(6px);
+}
+
+.cs-skin-border > span::after,
+.cs-skin-border .cs-selected span::after {
+	font-family: 'FontAwesome';
+	content: '\f107';
+}
+
+.cs-skin-border ul span::after {
+	content: '';
+	opacity: 0;
+}
+
+.cs-skin-border .cs-selected span::after {
+	content: '\e00e';
+	color: rgba($color_white,.6);
+	font-size: 1.5em;
+	opacity: 1;
+	-webkit-transition: opacity $trans_time;
+	transition: opacity $trans_time;
+}
+
+.cs-skin-border.cs-active > span {
+	background: #fff;
+	border-color: #fff;
+	color: $color_16;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.cs-skin-border .cs-options {
+	color: black;
+	opacity: 0;
+
+	@include transition(opacity $trans_time, height $trans_time, visibility 0s $trans_time);
+	@include border-radius(6px);
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.cs-skin-border.cs-active .cs-options {
+	opacity: 1;
+	@include transition(opacity $trans_time, height $trans_time);
+}
+
+.cs-skin-border ul span {
+	padding: 5px 40px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.cs-skin-border .cs-options li span:hover,
+.cs-skin-border li.cs-focus span {
+	background: $color_0;
+	@include border-radius(6px);
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}

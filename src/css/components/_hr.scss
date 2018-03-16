@@ -1,0 +1,13 @@
+hr{
+    margin: 0px auto;
+    width: 100%;
+    height: 2px;
+
+    &.small{
+        width: 85px;
+    }
+
+    &.cta{
+        background-color: $color_5;
+    }
+}

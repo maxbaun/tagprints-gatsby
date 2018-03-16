@@ -1,0 +1,35 @@
+.image-row{
+	margin-right:-10px;
+	margin-left:-10px;
+	overflow:auto;
+	img{
+		padding-right:10px;
+		padding-left:10px;
+		float:left;
+	}
+}
+
+.image-row.count-2{
+	img{
+
+		width:50%;
+
+	}
+}
+
+
+.image-row.count-3{
+	img{
+
+		width:33.3333%;
+
+	}
+}
+
+.image-row.count-4{
+	img{
+
+		width:25%;
+
+	}
+}

@@ -1,0 +1,20 @@
+.content-block.content-block-icon{
+	margin-bottom: 40px;
+	.content-block-image{
+		margin-bottom: 20px;
+	}
+
+	.content-block-text{
+		font-size: 20px;
+		color: $color_2;
+		font-weight: 500;
+		max-width: 190px;
+		margin: 0 auto 20px;
+	}
+}
+
+@media (max-width:$screen-sm-min){
+	.content-block.content-block-icon{
+
+	}
+}

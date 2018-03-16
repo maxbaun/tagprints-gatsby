@@ -1,0 +1,55 @@
+@import "paths";
+@import "mixins";
+@import "variables";
+@import "animations";
+
+.vertical-center{
+	display:table;
+	width:100%;
+	height:100%;
+}
+.vertical-center-inner{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.no-margin-top{
+    margin-top: 0px !important;
+}
+
+.no-margin-bottom{
+    margin-bottom: 0px !important;
+}
+
+style{
+	display:none !important;
+}
+
+.mobile-help{
+	font-size: 14px;
+}
+
+.fixed-bottom{
+	position: fixed;
+	bottom: 0px;
+	z-index: 1050;
+}
+
+@media (max-width: 768px){
+  .hide-for-small{
+    display:none;
+  }
+}
+
+@media (max-width: $screen-sm-min){
+	.text-left-xs{
+		text-align: left;
+	}
+	.text-center-xs{
+		text-align: center;
+	}
+	.text-right-xs{
+		text-align: right;
+	}
+}

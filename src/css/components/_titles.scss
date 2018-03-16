@@ -1,0 +1,180 @@
+// CSS FILE FOR TITLES
+
+.title,.subtitle{
+  margin-bottom:30px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.title.text-left{
+  text-align: left !important;
+}
+
+.title{
+  font-weight:100;
+  line-height: 50px;
+}
+
+.subtitle{
+  font-weight: 300;
+  line-height: 30px;
+}
+
+h5.subtitle{
+  font-size:18px;
+  line-height:18px;
+}
+
+.title.medium{
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.2;
+
+  + span.subtitle,
+  + h5.subtitle{
+      font-size: 24px;
+      line-height: 1.2;
+  }
+}
+
+.title.small{
+  font-size: 32.5px;
+  font-weight: 300;
+  line-height: 1.273;
+  margin-top: 0px;
+}
+
+.title.xs{
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+  margin-top: 0px;
+
+  + span.subtitle,
+  + h5.subtitle{
+      font-size: 18px;
+      line-height: 1.2;
+  }
+}
+
+
+.title.bold,
+.subtitle.bold{
+    font-weight: 700;
+}
+
+.title.normal,
+.subtitle.normal{
+    font-weight: 300;
+}
+
+.title.light,
+.subtitle.light{
+    font-weight: 100;
+}
+
+.title.faded,
+.subtitle.faded{
+    color: $color_24;
+}
+
+.title.white,
+.subtitle.white{
+    color: $color_white;
+}
+
+.title.shape-bg{
+  background-image: url($assetPath + '/images/title-background.png');
+  background-size: 100% 90px;
+  background-repeat: no-repeat;
+  white-space: nowrap;
+  width: 100%;
+  height: auto;
+  line-height: 90px;
+  text-align: center;
+  color: $color_white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:0px;
+  font-size: 40px;
+}
+
+.subtitle.accent{
+    color: $color_5;
+}
+
+.title .fa{
+  color: $color_5;
+  padding-top: 5px;
+  display: inline-block;
+}
+
+.title.title-image{
+  margin-top:0px;
+  img{
+    max-width: 222px;
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+.title.has-subtitle{
+  margin-bottom:0px;
+}
+
+.title.title-border{
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.title.title-border:after{
+  position: absolute;
+  top: calc(100% + 20px);
+  width: 60px;
+  height: 2px;
+  background-color: $color_5;
+  content: ' ';
+  left: 50%;
+  margin-left: -30px;
+}
+
+.title span.subtitle{
+    display: block;
+    margin-top: 10px;
+}
+
+.title.with-button{
+    position: relative;
+}
+
+.title-btn{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+@media (max-width: $screen-xs-min){
+
+  .title.shape-bg{
+    background: none;
+    background-image: none;
+    width: 100%;
+    height: auto;
+    line-height: 1;
+    color: inherit;
+    white-space: normal;
+  }
+
+  .title.medium{
+    font-size:30px;
+  }
+
+  .title.title-border.extra-spacing{
+    margin-bottom: 50px !important;
+  }
+
+
+
+
+}

@@ -1,0 +1,9 @@
+.image-animate {
+	@include opacity(0);
+	@include transition(opacity $trans_time);
+	overflow: hidden;
+
+	&.active {
+		@include opacity(1);
+	}
+}

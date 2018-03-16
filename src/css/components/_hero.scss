@@ -1,0 +1,28 @@
+.hero{
+    height: 50vh;
+    min-height: 25vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+
+    &.hero-cover{
+        background-size: cover;
+    }
+
+    .overlay{
+        @include bgImageOverlay($color_2);
+    }
+
+    .title{
+        font-family: "proxima_novasemibold";
+        text-shadow: 0px 5px 5px rgba($color_black, 0.75);
+        margin: 0px;
+    }
+}
+
+.hero-content{
+    padding: 15px;
+}

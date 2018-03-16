@@ -1,0 +1,29 @@
+body:after {
+  content: url($assetPath + '/images/close.png') url($assetPath + '/images/loading.gif') url($assetPath + '/images/prev.png') url($assetPath + '/images/next.png') !important;
+  display: none;
+}
+
+
+
+
+.lb-cancel {
+  background: url($assetPath + '/images/loading.gif') no-repeat;
+}
+.lb-nav a.lb-prev {
+  background: url($assetPath + '/images/prev.png') left 48% no-repeat;
+}
+.lb-nav a.lb-next {
+  background: url($assetPath + '/images/next.png') right 48% no-repeat;
+}
+
+.lb-data .lb-close {
+  background: url($assetPath + '/images/close.png') top right no-repeat;
+}
+
+// .lightbox-download{
+//     position: absolute;
+//     left: 50%;
+//     margin-left: -87px;
+//     top: 50%;
+//     margin-top: -22px;
+// }

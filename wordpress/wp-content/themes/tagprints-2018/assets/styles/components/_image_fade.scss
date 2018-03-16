@@ -1,0 +1,27 @@
+.image-fade{
+    position: relative;
+    width: 100%;
+    span,
+    img{
+        @include opacity(0);
+        @include transition(opacity $trans_time ease-in-out);
+        position: absolute;
+        left: 0;
+        top: 0;
+        &.active{
+            @include opacity(1);
+        }
+
+    }
+}
+
+
+@media(max-width:$screen-sm-min){
+    .image-fade{
+        img,
+        span{
+            left: 50%;            
+            @include transform(translateX(-50%));
+        }
+    }
+}

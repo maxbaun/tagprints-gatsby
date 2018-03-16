@@ -1,0 +1,62 @@
+body[data-theme="array13"] {
+	.modal-array13 {
+		.modal-header {
+			padding: 20px 30px;
+			border-bottom: 2px solid $color_34;
+
+			&::after {
+				@include clearfix();
+			}
+
+			.modal-title,
+			.close {
+				display: inline-block;
+			}
+
+			.modal-title {
+				font-size: 21px;
+				width: calc(100% - 28px);
+			}
+
+			.close {
+				vertical-align: middle;
+				background-color: $color_34;
+				padding: 5px 7.5px;
+				color: $color_black;
+				text-shadow: none;
+				width: 28px;
+				@include border-radius(4px);
+				@include opacity(1);
+
+				span {
+					line-height: 1;
+				}
+			}
+		}
+
+		hr {
+			background-color: $color_34;
+			border-color: $color_34;
+			border-width: 2px;
+		}
+
+		.modal-body {
+			padding: 20px 15px;
+		}
+
+		.modal-content {
+			background-color: $color_black;
+			border: 3px solid $color_34;
+		}
+
+		.btn-cta {
+			color: $color_black;
+			font-weight: bold;
+			letter-spacing: 1px;
+			&:hover {
+				color: $color_black;
+			}
+		}
+	}
+
+}

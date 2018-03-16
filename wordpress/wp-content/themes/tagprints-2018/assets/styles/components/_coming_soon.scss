@@ -1,0 +1,19 @@
+.coming-soon{
+    height: 78px;
+    width: 78px;
+    background-color: $color_5;
+    @include border-radius(50%);
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 6px;
+    line-height: .8;
+    border: 5px solid rgba($color_white, .7);
+}
+
+
+.coming-soon-text{
+    font-size: 12px;
+    color: $color_white;
+    font-weight: 700;
+    text-align: center;
+}

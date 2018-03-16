@@ -1,0 +1,36 @@
+.array13-banner {
+	min-height: 320px;
+}
+
+.array13-banner-inner {
+	padding: 40px 0;
+	position: relative;
+}
+
+.array13-banner-content {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	text-align: center;
+	bottom: 40px;
+	z-index: 1;
+
+	h1 {
+		margin: 0;
+		color: $color_white;
+		font-size: 93px;
+		line-height: 1;
+		font-family: $fontNexa;
+	}
+
+	h3 {
+		text-transform: uppercase;
+		span:first-child {
+			color: $color_30;
+		}
+
+		span:last-child {
+			color: $color_white;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.spbp-title {
+    color: $color_25;
+    font-size: 44px;
+    line-height: 1;
+    font-family: $fontGotham;
+    font-weight: 900;
+}
+
+@media (max-width: $screen-md-min) {
+    .spbp-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: $screen-sm-min) {
+    .spbp-title {
+        font-size: 32px;
+    }
+}

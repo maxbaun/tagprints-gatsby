@@ -1,0 +1,26 @@
+#fixed-buttons{
+    width: 100%;
+    padding: 15px;
+    width: 250px;
+    left: 50%;
+    margin-left: -125px;
+    transform: rotateY(90deg);
+    transform-origin: center;
+    @include opacity(0);
+    @include transition(all $trans_time);
+}
+
+#fixed-buttons.active{
+    @include opacity(1);
+    transform: rotateY(0deg);
+}
+
+#btn-all-case-studies{
+    @include opacity(0);
+    margin-bottom:-30px;
+}
+
+#btn-all-case-studies.active{
+    @include opacity(1);
+    margin-bottom:0px;
+}

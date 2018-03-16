@@ -1,0 +1,41 @@
+.spbl-section {
+	padding: 80px 0;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.spbl-section-small {
+	padding: 40px 0;
+}
+
+.spbl-section-bg {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.spbl-title {
+	text-align: center;
+
+	h1 {
+		font-size: 42px;
+		margin-top: 0;
+		color: $color_29;
+		font-family: $fontUltra;
+		text-transform: uppercase;
+	}
+}
+
+.spbl-text-block {
+	font-family: $fontBook;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+@media (max-width: $screen-md-min) {
+	.spbl-section {
+		padding: 40px 0;
+	}
+}

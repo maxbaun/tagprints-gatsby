@@ -1,0 +1,319 @@
+# Translation of Themes - Twenty Seventeen in Afrikaans
+# This file is distributed under the same license as the Themes - Twenty Seventeen package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-12-05 22:27:43+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: af_ZA\n"
+"Project-Id-Version: Themes - Twenty Seventeen\n"
+
+#. Description of the plugin/theme
+msgid "Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device."
+msgstr "Twintig Sewentien laat jou webwerf uitblink met 'n video aan die bokant of groot fotos. Gefokus op webwerwe vir besighede, die voorblad is verdeel in gedeeltes wat verander kan word. Dit bevat ook Widgets, navigasie, 'n logo en nog meer. Die asimmetriese raamwerk het 'n unieke kleurskema en vertoon al jou multi-media inhoud met 'n spesifieke artikel-formaat. Ons standaard tema vir 2017 werk goed in enige taal, vir enige omstandighede en op enige toestel. "
+
+#. Theme Name of the plugin/theme
+msgid "Twenty Seventeen"
+msgstr "Twintig Sewentien "
+
+#: template-parts/header/site-branding.php:34
+#: template-parts/navigation/navigation-top.php:27
+msgid "Scroll down to content"
+msgstr "Beweeg af na inhoud"
+
+#: functions.php:159
+msgctxt "Theme starter content"
+msgid "Coffee"
+msgstr "Koffie"
+
+#: functions.php:155
+msgctxt "Theme starter content"
+msgid "Sandwich"
+msgstr "Toebroodjie"
+
+#: functions.php:151
+msgctxt "Theme starter content"
+msgid "Espresso"
+msgstr "Espresso"
+
+#: inc/custom-header.php:119
+msgid "Pause background video"
+msgstr "Breek agtergrond video"
+
+#: inc/custom-header.php:118
+msgid "Play background video"
+msgstr "Speel agtergrond video"
+
+#: inc/template-tags.php:150
+msgid "Front Page Section %1$s Placeholder"
+msgstr "Voorblad gedeelte %1$s plekhouer"
+
+#: single.php:32
+msgid "Next Post"
+msgstr "Volgende artikel "
+
+#: index.php:27
+msgid "Posts"
+msgstr "Artikels "
+
+#: inc/template-tags.php:88
+msgid "Tags"
+msgstr "Sleutelwoorde "
+
+#: inc/template-tags.php:84
+msgid "Categories"
+msgstr "Kategorieë "
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:65
+msgid ", "
+msgstr ", "
+
+#. translators: %s: post date
+#: inc/template-tags.php:51
+msgid "<span class=\"screen-reader-text\">Posted on</span> %s"
+msgstr "<span class=\"screen-reader-text\">Gepubliseer op</span> %s"
+
+#. translators: %s: post author
+#: inc/template-tags.php:21
+msgid "by %s"
+msgstr "deur %s"
+
+#: inc/icon-functions.php:44
+msgid "Please define an SVG icon filename."
+msgstr "Kies 'n SVG Icon leêrnaam. "
+
+#: inc/icon-functions.php:39
+msgid "Please define default parameters in the form of an array."
+msgstr "Kies standaard grense in die vorm van 'n Array."
+
+#: inc/customizer.php:108
+msgid "Select pages to feature in each area from the dropdowns. Add an image to a section by setting a featured image in the page editor. Empty sections will not be displayed."
+msgstr "Kies die mees gewilde bladsye van die saklys in elke area. Voeg 'n foto by vir elke area by deur 'n gewilde foto te kies in die bladsy se skryfpaneel. Leë areas sal nie gewys word nie. "
+
+#. translators: %d is the front page section number
+#: inc/customizer.php:107
+msgid "Front Page Section %d Content"
+msgstr "Voorblad area %d inhoud"
+
+#: inc/customizer.php:83 inc/customizer.php:132
+msgid "Two Column"
+msgstr "Twee kolomme "
+
+#: inc/customizer.php:82 inc/customizer.php:131
+msgid "One Column"
+msgstr "Een kolom"
+
+#: inc/customizer.php:77
+msgid "Page Layout"
+msgstr "Bladsy uitleg "
+
+#: inc/customizer.php:66
+msgid "Theme Options"
+msgstr "Tema opsies"
+
+#: inc/customizer.php:50
+msgid "Custom"
+msgstr "Uniek"
+
+#: inc/customizer.php:48
+msgid "Light"
+msgstr "lig"
+
+#: inc/customizer.php:46
+msgid "Color Scheme"
+msgstr "Kleurskema "
+
+#: inc/custom-header.php:49
+msgid "Default Header Image"
+msgstr "Standaard hooffoto"
+
+#: functions.php:335
+msgid "Footer 2"
+msgstr "Voetstrook 2"
+
+#: functions.php:327 functions.php:337
+msgid "Add widgets here to appear in your footer."
+msgstr "Voeg Widgets hier by om te verskyn in die voetstrook. "
+
+#: functions.php:325
+msgid "Footer 1"
+msgstr "Voetstrook 1"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Libre Franklin, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:269
+msgctxt "Libre Franklin font: on or off"
+msgid "on"
+msgstr "aan"
+
+#: functions.php:63 functions.php:183
+#: template-parts/navigation/navigation-top.php:12
+msgid "Top Menu"
+msgstr "Boonste kieslys"
+
+#: comments.php:60
+msgid "Reply"
+msgstr "Antwoord "
+
+#: template-parts/post/content-none.php:27
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Dit lyk asof ons dit nie kan kry waarvoor jy soek nie. Miskien kan Soek help. "
+
+#: search.php:50
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Jammer, maar niks pas by jou soek-terme nie. Probeer asseblief weer met ander sleutelwoorde. "
+
+#: template-parts/post/content-none.php:23
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Gereed om jou eerste artikel te publiseer? <a href=\"%1$s\">Begin hier</a>."
+
+#: search.php:21 template-parts/post/content-none.php:17
+msgid "Nothing Found"
+msgstr "Niks was gevind nie"
+
+#: single.php:31
+msgid "Previous Post"
+msgstr "Vorige artikel"
+
+#: comments.php:66 single.php:31
+msgid "Previous"
+msgstr "Vorige"
+
+#: comments.php:67 single.php:32
+msgid "Next"
+msgstr "Volgende"
+
+#: searchform.php:20
+msgctxt "submit button"
+msgid "Search"
+msgstr "Soek"
+
+#: searchform.php:19
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Soek &hellip;"
+
+#: searchform.php:17
+msgctxt "label"
+msgid "Search for:"
+msgstr "Soek vir:"
+
+#: search.php:19
+msgid "Search Results for: %s"
+msgstr "Soek resultate vir: %s"
+
+#. translators: %s: Name of current post
+#: functions.php:363 template-parts/page/content-front-page-panels.php:43
+#: template-parts/page/content-front-page.php:44
+#: template-parts/post/content-audio.php:83
+#: template-parts/post/content-gallery.php:70
+#: template-parts/post/content-image.php:59
+#: template-parts/post/content-video.php:82 template-parts/post/content.php:56
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Lees meer<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: inc/customizer.php:49
+msgid "Dark"
+msgstr "Donker"
+
+#: inc/back-compat.php:39 inc/back-compat.php:51 inc/back-compat.php:66
+msgid "Twenty Seventeen requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again."
+msgstr "Twintig Sewentien vereis ten minste WordPress 4.7. Jy gebruik op die oomblik weergawe %s. Opdateer asseblief en probeer weer. "
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:116
+msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Wysig<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: template-parts/page/content-page.php:25
+#: template-parts/post/content-audio.php:88
+#: template-parts/post/content-gallery.php:75
+#: template-parts/post/content-image.php:64
+#: template-parts/post/content-video.php:87 template-parts/post/content.php:61
+msgid "Pages:"
+msgstr "Bladsye:"
+
+#: template-parts/navigation/navigation-top.php:17
+msgid "Menu"
+msgstr "Kieslys"
+
+#: header.php:27
+msgid "Skip to content"
+msgstr "Slaan oor na inhoud"
+
+#: functions.php:446
+msgid "Collapse child menu"
+msgstr "Maak sub-kieslys toe"
+
+#: functions.php:445
+msgid "Expand child menu"
+msgstr "Maak sub-kieslys oop"
+
+#: functions.php:64 functions.php:194
+msgid "Social Links Menu"
+msgstr "Sosiale skakels kieslys"
+
+#: template-parts/footer/site-info.php:13
+msgid "Proudly powered by %s"
+msgstr "Trots aangedrewe deur %s"
+
+#. #-#-#-#-#  twentyseventeen.pot (Twenty Seventeen 1.3)  #-#-#-#-#
+#. Author URI of the plugin/theme
+#: template-parts/footer/site-info.php:13
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: footer.php:25
+msgid "Footer Social Links Menu"
+msgstr "Sosiale kieslys skakels in voetstrook "
+
+#: comments.php:75
+msgid "Comments are closed."
+msgstr "Kommentare is gesluit."
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:40
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s Antwoord op &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s Antwoorde op &ldquo;%2$s&rdquo;"
+
+#. translators: %s: post title
+#: comments.php:36
+msgctxt "comments title"
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr "Een antwoord op &ldquo;%s&rdquo;"
+
+#: archive.php:47 index.php:52 search.php:45
+msgid "Page"
+msgstr "Bladsy"
+
+#: 404.php:21
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oeps! Daardie bladsy kon nie gevind word nie."
+
+#: 404.php:24
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Dit lyk asof niks in hierdie area gevind was nie. Probeer miskien 'n soektog?"
+
+#: archive.php:45 index.php:50 search.php:43
+msgid "Previous page"
+msgstr "Vorige bladsy"
+
+#: archive.php:46 index.php:51 search.php:44
+msgid "Next page"
+msgstr "Volgende bladsy"
+
+#. Author of the plugin/theme
+msgid "the WordPress team"
+msgstr "die WordPress span"
+
+#. Theme URI of the plugin/theme
+msgid "https://wordpress.org/themes/twentyseventeen/"
+msgstr "https://wordpress.org/themes/twentyseventeen/"

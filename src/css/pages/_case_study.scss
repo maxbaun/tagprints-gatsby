@@ -1,0 +1,122 @@
+.single-case_study{
+    min-height: 500px;
+
+
+  .case-study-header.dark{
+
+    .subtitle{
+      color:$color_2;
+    }
+  }
+  .case-study-header.light{
+    .subtitle{
+      color:$color_white;
+    }
+    .overlay{
+      background-color: rgba(#000000,.3);
+    }
+  }
+  .case-study-header{
+    text-align: center;
+    position:relative;
+    padding:0px !important;
+    min-height:500px;
+    max-height: 80vh;
+    background-size: cover !important;
+    max-width: 100%;
+    overflow: hidden;
+
+    .overlay{
+      padding: 60px 0px;
+      width:100%;
+      height:100%;
+      top:0;
+      left:0;
+      z-index: 1;
+      position: absolute;
+
+    }
+    .container{
+      z-index: 2;
+      height:100%;
+    }
+
+    .title{
+      font-size:48px;
+      text-transform: uppercase;
+      margin-bottom:20px;
+      text-align: center;
+    }
+
+    .subtitle{
+      margin-top:0px;
+      font-weight:300;
+      font-size: 18px;
+    }
+  }
+
+  .case-study-header.just-image{
+    min-height: auto !important;
+    img.background-image{
+      width:100%;
+      height:auto;
+    }
+    .overlay{
+      display:none;
+    }
+  }
+
+  .title{
+    font-family: proxima_novaextrabold;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom:30px;
+    margin-top:0px;
+    line-height: 1.2;
+  }
+  .case-study-block{
+    margin-bottom:30px;
+    .title{
+      font-family: Roboto;
+      font-size: 15px;
+      margin-bottom:10px;
+
+      line-height: 1;
+    }
+    .text{
+      font-size:15px;
+      line-height: 1.733;
+
+    }
+    ul{
+      list-style: circle inside black;
+      li{
+        color: $color_2;
+        margin-bottom:10px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+
+@media (max-width: $screen-xs-min){
+.single-case_study{
+  .case-study-header{
+    min-height:100px;
+    .overlay{
+      padding:30px 0px;
+      position: relative;
+    }
+    .title{
+      font-size:30px;
+      margin-bottom:0px;
+    }
+
+  }
+  .case-study-header.just-image{
+    min-height: auto !important;
+  }
+}
+
+}

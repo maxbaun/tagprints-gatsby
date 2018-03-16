@@ -1,0 +1,99 @@
+$font_site-default: "Courier 10 Pitch", Courier, monospace;
+
+
+$color_site-default:#000;
+$color_white: #fff;
+$color_black: #000000;
+
+$size_site-main: 100%;
+$size_site-sidebar: 25%;
+
+$white_border: rgba($color_white,.2);
+
+
+$bg_grey:     #f2f2f2;
+
+$color_0:     #f8f8f8;
+$color_1:     #b3b3b3;
+$color_2:     #333333;
+$color_3:     #575756;
+$color_4:     #4d4d4d;
+$color_5:     #f15a24; // cta color
+$color_6:     #ebebeb;
+$color_7:     #999999;
+$color_8:     #666666;
+$color_9:     #cccccc;
+$color_10:    #ea124f;
+$color_11:    #f1f1f1;
+$color_12:    #e6e6e6;
+$color_13:    #808080;
+$color_14:    #1a1a1a;
+$color_15:    #c5c5c5;
+$color_16:    #024b66; // blue
+$color_17:    #065b71;
+$color_18:    #29a6de;
+$color_19:    #1D437B;
+$color_20:    #4b709d;
+$color_21:    #e1e1e1;
+$color_22:    #949494;
+$color_23:    #c7c7c7;
+$color_24:    #aeaeae;
+$color_25:    rgb(8, 62, 86);
+$color_26:    #e6e6e6;
+$color_27:    #f7f7f7;
+$color_28:    #a7e0ea;
+$color_29:    #3b3a37;
+$color_30: 	  #B77A60;
+$color_31: 	  #D25D28;
+$color_32: 	  #B79B94;
+$color_33: 	  #2A5670;
+$color_34: 	  #B37A60;
+$color_35: 	  #EB5924;
+$color_36: rgb(157, 157, 156);
+$color_37: rgb(60, 60, 59);
+$color_38: #C6C6C6;
+$color_39: rgb(135, 135, 135);
+$color_40: rgb(178, 178, 178);
+$color_41: #3B3B3B;
+
+
+$fontGotham: 'Gotham';
+$fontUltra: 'Gotham Ultra';
+$fontBook: 'Gotham Book';
+$fontNexa: 'NexaRustScript';
+$fontLust: 'Lust';
+
+
+
+$main_nav_height:    70px;
+$landing_nav_height: 62px;
+$social_nav_height:  25px;
+$footer_height:      160px;
+$copy_height:        55px;
+$link_height:        14px;
+
+$featured_home_width: 380px;
+$featured_home_height: 385px;
+$featured_home_header_height: 155px;
+
+$benefit_height: 250px;
+$benefit_width: 580px;
+$benefit_image_height: $benefit_height;
+$benefit_image_width: $benefit_height;
+
+$logo_height:   37px;
+$logo_width:    186px;
+
+$logo_path:      $assetPath + '/images/logo.jpg';
+
+$trans_time:      0.3s;
+
+
+$break_point:      $screen-lg-min;
+
+$sm_container_width: 	716px;
+$excerpt_width:			   	$sm_container_width;
+$avatar_size: 				56px;
+
+$related_post_height: 209px;
+$related_post_width: 275px;

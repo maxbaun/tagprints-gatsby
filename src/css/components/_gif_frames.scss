@@ -1,0 +1,36 @@
+.gif-frames{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.gif-frames.double-spacing{
+    .gif-frame{
+        margin: 0 20px;
+    }
+}
+
+.gif-frame{
+    margin: 0 10px;
+}
+
+
+@media (max-width:$screen-sm-min){
+    .gif-frames{
+        display: block;
+        text-align: center;
+    }
+
+    .gif-frames.double-spacing{
+        .gif-frame{
+            margin: 0 10px;
+        }
+    }
+
+    .gif-frame{
+        margin: 10px 0;
+    }
+
+
+}

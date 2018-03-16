@@ -1,0 +1,13 @@
+<div class="array13-icons">
+	<div class="container">
+		<div class="row">
+			{% for icon in icons %}
+				<div class="col-sm-3 col-xs-6">
+					<div class="array13-icon">
+						<span>{% include icon.icon ignore missing with icon %}</span>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

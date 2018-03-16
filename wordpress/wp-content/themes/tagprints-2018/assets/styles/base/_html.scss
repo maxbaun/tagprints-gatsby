@@ -1,0 +1,12 @@
+//HTML/BODY specific styles
+
+html {
+}
+body {
+	&.page-transition {
+		@include transition(all 1s !important);
+		* {
+			@include transition(all 1s !important);
+		}
+	}
+}

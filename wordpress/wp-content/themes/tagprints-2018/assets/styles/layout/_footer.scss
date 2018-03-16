@@ -1,0 +1,121 @@
+//Footer specific stylings
+
+$link_padding: 4px;
+
+$social_link_size: 20px;
+
+footer{
+  background-color: $color_2;
+  *:not(.social-icons) a{
+    color: $color_1;
+  }
+  *:not(.social-icons) a:hover{
+    color: $color_5;
+  }
+  .footer-menu{
+    min-height: $footer_height;
+    height: auto;
+    background-color: $color_2;
+	z-index: 1;
+
+
+    .navbar-nav:not(.social-icons) > li > a{
+      padding: $link_padding 30px;
+      color: $color_1;
+      background-color: transparent !important;
+    }
+    .navbar-nav:not(.social-icons) > li:not(:last-child) > a{
+      border-right: 1px solid $color_8;
+    }
+    .navbar-nav:not(.social-icons) > li > a:hover{
+      color: $color_5;
+    }
+    .navbar-nav:not(.social-icons) > li{
+      padding: ($footer_height - $link_height - ($link_padding * 2))/2 0px;
+    }
+
+    .social-icons{
+      height: auto;
+      display: block;
+
+      li{
+        display: inline-block;
+        padding: ($footer_height - ($social_link_size * 2))/2 9px;
+        a{
+          height: $social_link_size * 2;
+          width: $social_link_size * 2;
+          font-size:$social_link_size;
+          border-radius: $social_link_size * 2;
+          border: 1px solid $color_7 !important;
+          display: inline-block;
+          padding: $social_link_size/2 0px !important;
+          text-align: center;
+          @include transition(all $trans_time);
+          border-color: $color_7;
+        }
+        a:hover{
+          border-color: $color_5 !important;
+        }
+      }
+    }
+  }
+  .footer-copy{
+    text-align: center;
+    font-size: $link_height;
+    line-height: $link_height;
+    padding: ($copy_height - $link_height)/2 0px;
+  }
+  .footer-logo {
+	  text-align: center;
+
+	  .tagprints-logo-svg {
+		  margin: 0 auto;
+	  }
+  }
+  .dropdown-menu {
+	  li {
+		  a {
+			  color: $color_1 !important;
+		  }
+		  a:hover,
+		  a:focus {
+			  color: $color_5 !important;
+			  background-color: transparent;
+		  }
+		  &.active {
+			  a {
+				  background-color: transparent !important;
+				  color: $color_1;
+
+				  &:hover {
+					  color: $color_5;
+				  }
+			  }
+		  }
+	  }
+  }
+}
+@media (max-width: $break_point) {
+  footer{
+    .footer-menu{
+      .navbar-nav{
+        float: none !important;
+      }
+      min-height: auto;
+      padding: ($copy_height - $link_height)/2 0px;
+      li{
+        padding: 0px !important;
+        a{
+          padding: 10px 15px !important;
+        }
+      }
+      .social-icons{
+        text-align: center;
+        margin-top: 20px;
+        li{
+          padding: 0px 11px !important;
+        }
+      }
+    }
+  }
+}

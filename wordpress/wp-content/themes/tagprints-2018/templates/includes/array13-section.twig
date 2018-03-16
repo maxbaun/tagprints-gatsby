@@ -1,0 +1,26 @@
+<section class="array13-section">
+	<div class="array13-section-inner">
+		{% if contain == 'true' %}
+		<div class="container">
+		{% endif %}
+		<div class="array13-section-header">
+			<h1>{{text1}}</h1>
+			<h3>{{text2}}</h3>
+			<p>{{text3}}</p>
+		</div>
+		{% if contain == 'true' %}
+		</div>
+		{% endif %}
+		<div class="array13-section-contenet">
+			{{ content }}
+		</div>
+
+		{% if contain == 'true' %}
+		<div class="container">
+		{% endif %}
+		<hr/>
+		{% if contain == 'true' %}
+		</div>
+		{% endif %}
+	</div>
+</section>

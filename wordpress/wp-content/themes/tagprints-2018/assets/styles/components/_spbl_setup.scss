@@ -1,0 +1,46 @@
+.spbl-setup {
+	padding: 100px 0;
+}
+
+.spbl-setup-inner {
+
+}
+
+.spbl-setup-gif {
+	text-align: center;
+}
+
+.spbl-setup-block {
+	margin-bottom: 70px;
+
+	h3 {
+		margin: 0 0 10px;
+		color: $color_29;
+		text-transform: uppercase;
+		font-size: 40px;
+		line-height: 1.2;
+		font-family: $fontUltra;
+
+		span {
+			color: $color_28;
+		}
+	}
+
+	p {
+		font-family: $fontBook;
+		line-height: 1.5;
+		font-size: 18px;
+		font-weight: lighter;
+		margin: 0;
+	}
+}
+
+@media (max-width: $screen-sm-min) {
+	.spbl-setup {
+		padding: 40px 0;
+	}
+
+	.spbl-setup-gif {
+		margin-bottom: 30px;
+	}
+}

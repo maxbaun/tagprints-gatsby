@@ -1,0 +1,40 @@
+.spbl-deliverable {
+	position: relative;
+
+	&:hover {
+		.spbl-deliverable-hover {
+			@include opacity(1);
+			visibility: visible;
+			@include transition(opacity 0.15s, visibility 0s);
+		}
+	}
+}
+
+.spbl-deliverable-hover {
+	visibility: hidden;
+	@include opacity(0);
+	position: absolute;
+	top: 0;
+	line-height: 1.1;
+	width: 230px;
+	left: 50%;
+	top: 50%;
+	@include transform(translate3d(-50%, -50%, 0));
+	text-align: center;
+	padding: 20px 25px;
+	background-color: rgba($color_28, 0.8);
+	color: $color_29;
+	font-weight: bold;
+	font-family: $fontGotham;
+	z-index: 1;
+	@include border-radius(4px);
+	@include transition(opacity 0.15s, visibility 0s 0.15s);
+
+}
+
+
+@media (max-width: $screen-md-min) {
+	.spbl-deliverable {
+		margin-bottom: 10px;
+	}
+}

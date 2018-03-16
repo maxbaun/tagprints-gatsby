@@ -1,0 +1,29 @@
+<div class="array13-gallery">
+	{% for row in rows %}
+		<div class="row">
+			{% for column in row %}
+				<div class="col-sm-4">
+					<div class="array13-gallery-image-wrap">
+						<div class="array13-gallery-image">
+							{% filter shortcodes %}
+							[image id={{column.image}} center="true" size="array13-gallery-thumb" lightbox="true" lightbox_group="{{id}}"/]
+							{% endfilter %}
+						</div>
+						<!-- <div class="array13-gallery-image-overlay">
+							<div class="vertical-center">
+								<div class="vertical-center-inner">
+									<p class="array13-gallery-image-text">{{ column.text }}</p>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	{% endfor %}
+	{% if more %}
+		<div class="array13-gallery-more">
+			<a href="{{more.link}}" target="{{more.target}}">{{more.text}}</a>
+		</div>
+	{% endif %}
+</div>

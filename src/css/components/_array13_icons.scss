@@ -1,0 +1,21 @@
+.array13-icon {
+	display: block;
+	margin: 0 auto 30px;
+	height: 175px;
+	width: 175px;
+	svg {
+		height: 175px;
+		width: 175px;
+	}
+}
+
+@media (max-width: $screen-sm-min) {
+	.array13-icon {
+		height: 150px;
+		width: 150px;
+		svg {
+			height: 150px;
+			width: 150px;
+		}
+	}
+}

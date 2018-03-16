@@ -1,0 +1,19 @@
+$gif_button_height: 72px;
+$gif_button_width: 309px;
+
+.gif-mode{
+    background-image: url($assetPath + '/images/gif-button-off.png');
+    background-size: $gif_button_width $gif_button_height;
+    @include image-2x($assetPath + '/images/gif-button-off@2x.png', $gif_button_width, $gif_button_height);
+    height: $gif_button_height;
+    width: $gif_button_width;
+    background-position: center;
+    display: block;
+    cursor: pointer;
+}
+
+.gif-mode.active{
+    display: none;
+    background-image: url($assetPath + '/images/gif-button-on.png');
+    @include image-2x($assetPath + '/images/gif-button-on@2x.png', $gif_button_width, $gif_button_height);
+}

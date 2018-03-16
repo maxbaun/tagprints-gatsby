@@ -1,0 +1,152 @@
+@mixin link ($c: $color_7) {
+	color: $c;
+
+	&:hover {
+		color: $color_5;
+	}
+}
+
+body[data-theme="default"] {
+	font-family: 'Roboto';
+	background-color: $color_white;
+
+	.tagprints-logo-svg {
+		.st0{
+			fill: $color_35;
+		}
+		.st1{
+			fill: $color_35;
+		}
+		.st2{
+			fill: $color_33;
+		}
+		.st3{
+			fill: $color_35;
+		}
+		.st4{
+			fill: $color_33;
+		}
+	}
+
+	.navbar-main {
+		background-color: $color_white;
+
+		.main-navigation {
+			li {
+				a {
+					@include link($color_4);
+				}
+
+				&:not(:last-child) {
+					a {
+						border-right-color: $color_6;
+					}
+				}
+			}
+		}
+
+		.dropdown-menu {
+			background-color: $color_white;
+		}
+
+		.social-icons {
+			li {
+				a {
+					@include link();
+				}
+
+				&.separator {
+					background-color: $color_6;
+				}
+			}
+		}
+	}
+
+	.navbar-social {
+		.social-icons {
+			li {
+				a {
+					@include link();
+				}
+
+				&.separator {
+					background-color: $color_6;
+				}
+			}
+		}
+	}
+
+	input[type="text"]:focus,
+	input[type="email"]:focus,
+	input[type="phone"]:focus,
+	input[type="search"]:focus,
+	textarea:focus{
+		border: 1px solid $color_5;
+	}
+
+	.ui-state-highlight,
+	.ui-state-hover{
+		background: $color_5 !important;
+		background-color: $color_5 !important;
+		color: $color_white !important;
+	}	
+
+	footer {
+		.footer-menu {
+			background-color: $color_2;
+		}
+
+		.footer-copy {
+			background-color: transparent;
+			border-top: 1px solid $color_8;
+			color: rgba($color_0,.4);
+		}
+	}
+
+	hr {
+		border-color: $color_11;
+	    background-color: $color_11;
+	    color: $color_11;
+	}
+
+	@media (min-width: $break_point) {
+		.navbar-main {
+			.navbar-cta {
+				.btn {
+					color: $color_4;
+					border-color: $color_4;
+					background-color: transparent;
+				}
+			}
+		}
+		.tab-dropdown {
+			.dropdown-menu {
+				li {
+					a {
+						color: $color_25;
+						background-color: $color_white;
+
+						&:active,
+		                &:hover {
+		                    color: $color_5;
+		                }
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: $break_point) {
+		.navbar-main {
+			.navbar-collapse {
+				background-color: $color_white !important;
+			}
+
+			.navbar-cta {
+				.btn {
+					color: $color_5 !important;
+				}
+			}
+		}
+	}
+}

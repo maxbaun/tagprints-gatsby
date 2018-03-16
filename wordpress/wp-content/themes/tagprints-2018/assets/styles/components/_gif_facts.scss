@@ -1,0 +1,44 @@
+.gif-facts{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.gif-fact{
+    padding: 0 50px;
+    font-size: 14px;
+    line-height: 1.286;
+    color: $color_22;
+
+    .svg-icon{
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+}
+
+
+.gif-fact-separator{
+    background-color: $color_21;
+    height: 24px;
+    width: 1px;
+}
+
+@media (max-width:$screen-sm-min){
+    .gif-facts{
+        display: block;
+        text-align: center;
+    }
+
+
+    .gif-fact{
+        padding: 25px 0;
+    }
+
+    .gif-fact-separator{
+        height: 1px;
+        width: 24px;
+        margin: 0 auto;
+        display: block;
+    }
+}

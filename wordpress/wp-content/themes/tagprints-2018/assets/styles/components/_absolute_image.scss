@@ -1,0 +1,47 @@
+.absolute-image{
+  border-top: 2px solid $color_9;
+  position: relative;
+  background-color: $color_white;
+  height: 100px;
+  margin-top: 250px;
+  .centered-image{
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    bottom: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.absolute-image-full{
+	position: relative;
+	background: transparent;
+	margin-top: 0px;
+	height: auto;
+	border-top: none;
+	max-width: 1170px;
+	margin-right: auto;
+	margin-left: auto;
+
+	.centered-image{
+		position: absolute;
+		bottom: 0px;
+		left:0;
+	    right:0;
+	    margin-left:auto;
+	    margin-right:auto;
+	}
+}
+
+@media(max-width:$screen-sm-min){
+	.absolute-image-full{
+		height: auto !important;
+
+		.centered-image{
+			position: relative;
+		}
+	}
+}

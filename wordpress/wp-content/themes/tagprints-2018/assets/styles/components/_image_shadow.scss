@@ -1,0 +1,9 @@
+.image-shadow{
+    background-image: url($assetPath + '/images/gif-shadow.png');
+    background-size: 954px 29px;
+    @include image-2x($assetPath + '/images/gif-shadow@2x.png', 954px, 29px);
+    height: 29px;
+    background-position: center;
+    margin-top: 10px;
+    @include opacity(.8);
+}

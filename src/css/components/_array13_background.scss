@@ -1,0 +1,44 @@
+.array13-background {
+	position: relative;
+	overflow: hidden;
+
+	&[data-background="dots"] {
+		.array13-background-image {
+			background-repeat: space no-repeat;
+			background-position: left center;
+			background-size: 296px 274px;
+			background-image: url($assetPath + '/images/array13-dots.png');
+			@include image-2x($assetPath + '/images/array13-dots@2x.png', 296px, 274px);
+		}
+	}
+	&[data-background="art"] {
+		.array13-background-image {
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: auto 100%;
+			background-image: url($assetPath + '/images/array13-art.png');
+			@include image-2x($assetPath + '/images/array13-art@2x.png', 1885px, 1254px);
+		}
+	}
+}
+
+.array13-background-image {
+	position: absolute;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+}
+
+
+@media (max-width: $screen-sm-min) {
+	.array13-background {
+		position: relative;
+		overflow: hidden;
+
+		&[data-background="dots"] {
+			.array13-background-image {
+				display: none;
+			}
+		}
+	}
+}

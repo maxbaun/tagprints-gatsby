@@ -1,0 +1,35 @@
+.scroll-next-wrapper{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+}
+
+.scroll-next{
+  height: 40px;
+  width: 40px;
+  @include border-radius(50%);
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: .7;
+  @include transition(opacity, $trans_time);
+  cursor: pointer;
+
+  span{
+    font-size: 35px;
+    margin-top: 2px;
+  }
+}
+
+.scroll-next:hover{
+  opacity: 1;
+}
+
+@media (max-width:$screen-sm-min){
+    .scroll-next-wrapper{
+        bottom: 30px !important;
+    }
+}

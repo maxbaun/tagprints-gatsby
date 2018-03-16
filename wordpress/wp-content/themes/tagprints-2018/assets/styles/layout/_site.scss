@@ -1,0 +1,125 @@
+.col-sm-offset-1-5{
+  margin-left: 12.45%;
+}
+
+.border-top{
+  @include border-top();
+}
+
+.border-bottom{
+  @include border-bottom();
+}
+
+
+section.blue,
+.bg-light-blue,
+.bg-blue-gradient,
+.bg-dark-blue{
+  .title{
+    color: $color_white;
+  }
+
+  &.border-bottom{
+    border-bottom: 1px solid $white_border;
+  }
+
+  form{
+    color: $color_white;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea{
+    border: 1px solid rgba($color_white, .5);
+    color: rgba($color_white, .5);
+    padding: 15px 20px;
+    background-color:transparent;
+    text-transform: none;
+    @include border-radius(6px);
+  }
+
+  ::-webkit-input-placeholder {
+    text-transform: none;
+    color: rgba($color_white, .5);
+    @include transition(color $trans_time);
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    text-transform: none;
+    color: rgba($color_white, .5);
+    @include transition(color $trans_time);
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+    text-transform: none;
+    color: rgba($color_white, .5);
+    @include transition(color $trans_time);
+  }
+
+  :-ms-input-placeholder {
+    text-transform: none;
+    color: rgba($color_white, .5);
+    @include transition(color $trans_time);
+  }
+}
+
+.bg-light-blue{
+    background-color: $color_18;
+    .landing-quote-bubble{
+      background-color: $color_19;
+    }
+    .landing-quote-bubble:before{
+      border-color: transparent $color_19;
+    }
+}
+
+.bg-blue-gradient{
+    @include verticalGradient($color_18, $color_19);
+    &.border-bottom{
+      border-bottom: 1px solid $color_20;
+    }
+}
+
+.bg-dark-blue{
+    background-color: $color_19;
+}
+
+hr{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.main {
+	width:100%;
+}
+.main.sidebar {
+	width:70%;
+	float:left;
+}
+.sidebar {
+	width:25%;
+	float:right;
+}
+
+.page-header{
+  margin-top:50px;
+  margin-bottom:0px;
+  padding:0px;
+  border:none;
+  .title{
+    margin:0px;
+  }
+}
+
+.thumbnail{
+  @include transition(none);
+}
+
+iframe[name="google_conversion_frame"] {
+	display: none;
+}
+
+@media(max-width:$screen-sm-min){
+  .col-sm-offset-1-5{
+    margin-left: auto;
+  }
+}

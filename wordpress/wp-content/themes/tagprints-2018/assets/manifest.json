@@ -1,0 +1,41 @@
+{
+    "dependencies": {
+        "main.js": {
+            "files": [
+                "scripts/main.js"
+            ],
+            "main": true
+        },
+        "main.css": {
+            "files": [
+                "styles/main.scss"
+            ],
+            "main": true
+        },
+        "bootstrap.css" : {
+            "files": [
+                "styles/bootstrap.scss"
+            ]
+        },
+        "vendor.css": {
+            "bower": ["fontawesome","lightbox2","jquery-ui-bootstrap","flickity", "animate.css"]
+        },
+        "customizer.js": {
+            "files": [
+                "scripts/customizer.js"
+            ]
+        },
+        "jquery.js" : {
+            "bower": ["jquery"]
+        },
+        "vendor.js" : {
+            "bower" : ["waypoints", "modernizr","bootstrap-sass","flickity", "lightbox2"]
+        },
+        "jquery.json.js" : {
+            "bower": ["jquery-json"]
+        }
+    },
+    "config": {
+        "devUrl": "http://tagprints.dev"
+    }
+}

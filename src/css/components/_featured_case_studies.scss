@@ -1,0 +1,212 @@
+.featured-case-studies{
+    .case-study-large,
+    .case-study{
+        margin-bottom:30px;
+        .btn{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .content{
+            .text{
+                font-size: 14px;
+                line-height: 1.714;
+                font-weight: 300;
+                color: $color_2;
+
+            }
+        }
+    }
+    .case-study-large{
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: table;
+        box-shadow: 2px 1px 10px  $color_1;
+        .graphic,.content{
+            display: table-cell;
+            vertical-align: middle;
+            overflow: visible;
+        }
+        .graphic{
+            background: transparent;
+            border:none;
+            padding:0px;
+            width: 65%;
+
+            img{
+                width: 100%;
+                margin-left:auto;
+                margin-right: auto;
+                display: block;
+            }
+        }
+        .content{
+            width: 35%;
+            padding: 20px;
+            background-color: rgba($color_white,.8);
+
+            .logo{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .title{
+                font-size: 18px;
+                line-height: 18px;
+                font-weight: 500;
+                margin-bottom: 30px;
+                margin-top: 0px;
+                color: $color_2;
+            }
+        }
+    }
+    .case-study[data-href]{
+        cursor:pointer;
+    }
+    .case-study{
+        height: 333px;
+        text-align: center;
+        position: relative;
+        max-width: 363px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+
+        .preview{
+            position: relative;
+            height: 263px;
+            width: 100%;
+            background-color: $color_2;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .logo{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .logo-image{
+            margin-right: auto;
+            margin-left: auto;
+
+            p {
+                margin: 0;
+            }
+        }
+
+
+        .overlay{
+            @include opacity(0);
+            @include transition(all $trans_time);
+            background-color: rgba($color_5, .8);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+
+            .btn{
+                transform: rotateY(90deg);
+                transform-origin: center;
+				width: 150px;
+                @include transition(all $trans_time);
+            }
+
+            .btn:hover{
+                color: $color_white;
+                border-color: $color_white;
+            }
+        }
+
+        .thumbnail{
+            background-color:transparent;
+            padding: 0px;
+            border: none;
+            border-radius: 0px;
+            height: 105px;
+
+        }
+
+        .content{
+            padding: 10px 20px;
+        }
+
+        .title, .subtitle, .text{
+            margin: 0px;
+        }
+        .title{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.6;
+            color: $color_2;
+        }
+
+        .text{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 1.6;
+            color: $color_white;
+        }
+
+        .subtitle{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 1.8;
+            color: $color_8;
+        }
+
+        .coming-soon{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -39px;
+            margin-left: -39px;
+            transform: rotateY(90deg);
+            transform-oriding: center;
+            @include opacity(0);
+            @include transition(all $trans_time, transform $trans_time .1s);
+        }
+
+        .coming-soon:hover{
+            @include animation(bounce $trans_time*5);
+        }
+    }
+
+    .case-study:hover{
+        .overlay{
+            @include opacity(1);
+
+            .btn{
+                transform: rotateY(0deg);
+
+            }
+        }
+        .coming-soon{
+            @include opacity(1);
+            transform: rotateY(0deg);
+        }
+    }
+
+}
+@media (max-width: $screen-sm-min){
+    .featured-case-studies{
+        .case-study-large{
+            display: block;
+            .content{
+                display: block;
+                width: 100%;
+            }
+            .map{
+                display:none;
+            }
+        }
+
+        .case-study{
+            .coming-soon{
+                @include opacity(1);
+                transform: rotateY(0deg);
+            }
+
+        }
+    }
+}

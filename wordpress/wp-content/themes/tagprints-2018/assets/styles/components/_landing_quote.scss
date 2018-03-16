@@ -1,0 +1,65 @@
+.landing-quote{
+  margin-bottom: 30px;
+}
+
+.landing-quote-bubble{
+  padding: 30px;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  @include border-radius(10px);
+  position: relative;
+}
+
+.landing-quote-bubble:before{
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-width: 0 0 20px 30px;
+  border-style: solid;
+  display: block;
+  content: '';
+  left: 60px;
+}
+
+
+.landing-quote-content{
+  font-size: 14px;
+  color: $color_white;
+  line-hgith: 1.9;
+  margin-bottom: 0px;
+
+}
+
+.landing-quote-info-wrapper{
+  display: table;
+  margin-top: 20px;
+}
+
+.landing-quote-thumbnail,
+.landing-quote-info{
+  display: table-cell;
+  vertical-align: middle;
+  color: $color_white;
+}
+
+.landing-quote-info{
+  padding-left: 20px;
+}
+
+.landing-quote-title,
+.landing-quote-position{
+  margin-bottom: 0px;
+}
+
+.landing-quote-title{
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.landing-quote-position{
+  font-size: 13px;
+  line-height: 1.3;
+  @include opacity(.6);
+}

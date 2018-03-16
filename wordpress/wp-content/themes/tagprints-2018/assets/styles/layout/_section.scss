@@ -1,0 +1,105 @@
+section{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-size: cover;
+	background-position:center;
+	background-repeat: no-repeat;
+	overflow:auto;
+	width:100%;
+
+	&.xl{
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+
+	&.lg{
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	&.medium{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	&.small{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	&.no-bottom-padding{
+		padding-bottom:0px;
+	}
+
+	&.no-top-padding{
+		padding-top: 0px;
+	}
+
+	&.no-padding{
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	&.overflow-visible{
+		overflow: visible;
+	}
+}
+
+
+section.grey{
+	background-color: $bg_grey;
+
+	&.border-top{
+		border-top: 1px solid $color_23;
+	}
+	&.border-bottom{
+		border-bottom: 1px solid $color_23;
+	}
+}
+
+section.white{
+	background-color: $color_white;
+}
+
+section.light-grey{
+	background-color: $color_0;
+}
+
+section.blue{
+	background-color: $color_16;
+	.landing-quote-bubble{
+		background-color: $color_17;
+	}
+	.landing-quote-bubble:before{
+		border-color: transparent $color_17;
+	}
+}
+
+.bg-brick{
+	background-image: url($assetPath + '/images/brickwall.png');
+	background-size: 110px 69px;
+	@include image-2x($assetPath + '/images/brickwall@2x.png', 110px, 69px);
+	background-repeat: repeat;
+}
+
+section.brick{
+	@extend .bg-brick;
+}
+
+section.brick.borders{
+	border-top: 2px solid $color_9;
+	border-bottom: 2px solid $color_9;
+}
+
+@media(max-width:$screen-xs-min){
+	section:not(.no-top-padding){
+		padding-top: 30px;
+	}
+	section:not(.no-bottom-padding){
+		padding-bottom: 30px;
+	}
+	section.no-padding{
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+}

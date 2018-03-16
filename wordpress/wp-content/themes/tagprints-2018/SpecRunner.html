@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Spec runner</title>
+        <link rel="stylesheet" type="text/css" href="node_modules/jasmine-core/lib/jasmine-core/jasmine.css">
+        <script type="text/javascript" src="node_modules/jasmine-core/lib/jasmine-core/jasmine.js"></script>
+        <script type="text/javascript" src="node_modules/jasmine-core/lib/jasmine-core/jasmine-html.js"></script>
+        <script type="text/javascript" src="node_modules/jasmine-core/lib/jasmine-core/boot.js"></script>
+        <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="node_modules/jasmine-jquery/lib/jasmine-jquery.js"></script>
+        <script src="http://requirejs.org/docs/release/2.3.2/minified/require.js" charset="utf-8"></script>
+        <!-- SRC -->
+        <!-- <script type="text/javascript" src="dist/scripts/main.js"></script> -->
+
+        <!-- SPECS -->
+        <script type="text/javascript" src="dist/scripts/test.js"></script>
+
+        <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+         var MSG = "Hello World!";
+
+         function hideMessage() {
+           $( "#pMsg" ).html("");
+         }
+
+         function showMessage() {
+           $( "#pMsg" ).html(MSG);
+         }
+
+         function setUpHTMLFixture() {
+           setFixtures('<form id="testForm" action="">'
+                      +'  <h1>Test Form</h1>'
+                      +'  <input type="text" id="txtMessage">'
+                      +'  <br>'
+                      +'  <button id="btnHideMessage" type="button" onclick="hideMessage()">Hide Message</button>'
+                      +'  <button id="btnShowMessage" type="button" onclick="showMessage()">Show Message</button>'
+                      +'  <br>'
+                      +'  <p id="pMsg"></p>'
+                      +'</form>');
+
+         }
+        </script>
+    </body>
+
+</html>

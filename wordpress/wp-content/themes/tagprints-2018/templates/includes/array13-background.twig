@@ -1,0 +1,12 @@
+<div class="array13-background" data-background="{{background_image}}" style="{{style}}">
+	<div class="array13-background-image"></div>
+	{% if contain == 'true' %}
+	<div class="container">
+	{% endif %}
+		<div class="array13-background-content" style="background-color: {{background_color}};">
+			{{ content }}
+		</div>
+	{% if contain == 'true' %}
+	</div>
+	{% endif %}
+</div>

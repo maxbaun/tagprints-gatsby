@@ -1,0 +1,39 @@
+.ui-widget-header{
+	background-color: $color_0 !important;
+}
+
+.ui-state-default{
+	box-shadow: none !important;
+	text-shadow: none !important;
+	color: $color_2 !important;
+}
+
+.ui-state-hover{
+	color: $color_white !important;
+}
+
+
+.ui-datepicker-prev,
+.ui-datepicker-next{
+	cursor:pointer;
+	background:none !important;
+	font-weight: 700 !important;
+	color: $color_2 !important;
+	padding: 5px;
+	.ui-icon{
+		background: none !important;
+	}
+}
+
+.ui-datepicker-next{
+	float:right;
+}
+
+.ui-datepicker-title{
+	padding:5px;
+
+}
+
+.ui-datepicker {
+	display: none;
+}
