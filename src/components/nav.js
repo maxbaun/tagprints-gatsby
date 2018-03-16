@@ -63,7 +63,7 @@ export default class Nav extends React.Component {
 }
 
 function link(url) {
-	return url.replace('http://localhost:8080', '');
+	return url.replace('http://159.65.240.158', '');
 }
 
 export const query = graphql`

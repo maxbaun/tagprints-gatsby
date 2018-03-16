@@ -41,6 +41,7 @@ $cutlass_includes = array(
   'inc/widgets/index.php',                  // Custom widgets
   'inc/s3.php',                  // Custom widgets
   'inc/check-plugins.php',                  // Custom widgets
+  'inc/api.php',                  // Custom widgets
 );
 
 foreach ($cutlass_includes as $file) {

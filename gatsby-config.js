@@ -11,7 +11,7 @@ module.exports = {
 		* plugins. Here the site sources its data from Wordpress.
 		*/
 		{
-			resolve: `gatsby-source-wordpress`,
+			resolve: `gatsby-source-max`,
 			options: {
 				/*
 				* The base URL of the Wordpress site without the trailingslash and the protocol. This is required.
@@ -31,15 +31,8 @@ module.exports = {
 				verboseOutput: true
 			}
 		},
-		'gatsby-plugin-react-helmet',
 		`gatsby-transformer-sharp`,
-		`gatsby-plugin-sharp`
-		// `gatsby-plugin-glamor`,
-		// {
-		// 	resolve: `gatsby-plugin-typography`,
-		// 	options: {
-		// 		pathToConfigModule: `src/utils/typography.js`
-		// 	}
-		// }
+		`gatsby-plugin-sharp`,
+		'gatsby-plugin-react-helmet'
 	]
 };
