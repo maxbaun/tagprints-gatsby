@@ -5,7 +5,7 @@ let stylesStr;
 
 if (process.env.NODE_ENV === `production`) {
 	try {
-		stylesStr = require(`!raw-loader!../public/main.css`);
+		stylesStr = require(`!raw-loader!../public/styles.css`);
 	} catch (e) {
 		console.log(e);
 	}
@@ -54,13 +54,6 @@ export default class Html extends React.Component {
 					/>
 					{this.props.postBodyComponents}
 					<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZyFJjtN1lLLz3UoVF_mDelyTQOSZ0-rY"/>
-					<script src="https://code.jquery.com/jquery-1.9.1.js"/>
-					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"/>
-					<script src="/scripts/matchMedia.js"/>
-					<script src="/scripts/jquery.json.js"/>
-					<script src="/scripts/gravityforms.js"/>
-					<script src="/scripts/placeholders.js"/>
-					<script src="/scripts/gfplaceholderaddon.js"/>
 				</body>
 			</html>
 		);

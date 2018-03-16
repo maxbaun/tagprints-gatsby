@@ -7,7 +7,7 @@ require('./lib/gfplaceholderaddon');
 document.addEventListener("DOMContentLoaded", function() {
     jQuery(document).ready(function($) {
         gformInitSpinner(1, 'http://localhost:8080/wp-content/plugins/gravityforms/images/spinner.gif');
-        jQuery('#gform_ajax_frame_1').load(function() {
+        jQuery('#gform_ajax_frame_1').on('load', function() {
 
             var contents = jQuery(this).contents().find('*').html();
             var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;

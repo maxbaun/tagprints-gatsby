@@ -268,7 +268,7 @@ var cutlass = {
 				repositionAbsoluteImage($(this).parents('.absolute-image').first());
 			});
 
-			$('.absolute-image img').load(function () {
+			$('.absolute-image img').on('load', function () {
 				repositionAbsoluteImage($(this).parents('.absolute-image').first());
 			});
 
@@ -508,6 +508,7 @@ var cutlass = {
 			/** *****************************************************
 			GOOGLE MAPS
 			****************************************************** */
+			console.log($('.google-map'));
 			$('.google-map').each(function () {
 				let mapId = $(this).attr('id');
 				let $map = $('#' + mapId);

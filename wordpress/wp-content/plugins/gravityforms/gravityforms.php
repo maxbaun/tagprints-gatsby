@@ -1503,6 +1503,7 @@ class GFForms {
 		 * @param array  $attributes       The attributes within the shortcode.
 		 * @param string $content          The content of the shortcode, if available.
 		 */
+	
 		$shortcode_string = apply_filters( "gform_shortcode_{$action}", $shortcode_string, $attributes, $content );
 
 		return $shortcode_string;
