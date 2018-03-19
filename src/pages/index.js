@@ -18,7 +18,7 @@ export default class Home extends React.Component {
 
 export const pageQuery = graphql`
 query HomePage {
-  wordpressPage(wordpress_id: {eq: 6}) {
+  wordpressPage(wordpress_id: {eq: 5}) {
     content
   }
 }
